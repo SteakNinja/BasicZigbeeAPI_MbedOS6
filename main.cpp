@@ -7,7 +7,7 @@
 #define BUFFSIZE        64
 
 BufferedSerial pc(USBTX,USBRX, 115200);
-Zigbee xbee(PB_9,PB_8);
+Zigbee xbee(PB_9,PB_8); // Zigbee module configured with 115200 baud rate - Change in Zigbee.cpp if required.
 
 char buffer[BUFFSIZE]   = {0};
 char msgBuff[BUFFSIZE]  = {0};
