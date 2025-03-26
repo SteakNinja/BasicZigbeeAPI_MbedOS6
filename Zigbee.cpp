@@ -31,12 +31,12 @@ void Zigbee::sendFrame(const char* message, int length) {
 
     txBuffer[4]             = 0x01; // Frame ID (set to 0 for no response)
 
-    txBuffer[5]             = 0xFF; // 64-bit Destination Address
-    txBuffer[6]             = 0xFF;
-    txBuffer[7]             = 0xFF;
-    txBuffer[8]             = 0xFF;
-    txBuffer[9]             = 0xFF;
-    txBuffer[10]            = 0xFF;
+    txBuffer[5]             = 0x00; // 64-bit Destination Address
+    txBuffer[6]             = 0x00;
+    txBuffer[7]             = 0x00;
+    txBuffer[8]             = 0x00;
+    txBuffer[9]             = 0x00;
+    txBuffer[10]            = 0x00;
     txBuffer[11]            = 0xFF;
     txBuffer[12]            = 0xFF;
 
